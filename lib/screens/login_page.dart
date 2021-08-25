@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:online_store/constants.dart';
 import 'package:online_store/widgets/custom_button.dart';
+import 'package:online_store/widgets/custom_input_field.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -25,7 +26,12 @@ class _LoginPageState extends State<LoginPage> {
                 style: Constants.boldHeading,
               ),
             ),
-            Text("input Fields"),
+            Column(children: [
+              CustomInputField(),
+              CustomInputField(),
+              CustomButton(
+                  text: "Login", outlineButton: false, onPressed: () {}),
+            ]),
             CustomButton(
               text: "Create New Account",
               onPressed: () {
