@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.only(top: 26),
               child: Text(
-                "Welcome User.\nLogin to your account,",
+                "Welcome User.\nLogin to your account.",
                 textAlign: TextAlign.center,
                 style: Constants.boldHeading,
               ),
@@ -34,6 +34,7 @@ class _LoginPageState extends State<LoginPage> {
             ]),
             CustomButton(
               text: "Create New Account",
+              outlineButton: true,
               onPressed: () {
                 print("Clicked the create account button");
               },
